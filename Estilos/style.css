@@ -1,0 +1,123 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  padding-inline-start: 30px;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    #c8293f 0%,
+    #f14539 50%,
+    #ff6e42 100%
+  );
+  font-family: "Ubuntu", sans-serif;
+}
+section {
+  -webkit-box-shadow: 5px 5px 50px 8px rgba(0, 0, 0, 0.59);
+  box-shadow: 5px 5px 50px 8px rgba(0, 0, 0, 0.59);
+  background-color: white;
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+header {
+  background-image: url("https://wallpapercave.com/uwp/uwp1248948.jpeg");
+  background-size: cover;
+  background-position-y: -85px;
+  height: 100px;
+  border-radius: 5px;
+}
+header img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(-50%);
+  border: 8px solid white;
+  background-color: white;
+}
+section h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 5px 0px;
+  text-align: center;
+}
+.redes-container {
+  text-align: center;
+  font-size: 20px;
+  margin: 8px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.redes-container a {
+  margin: 0px 10px;
+}
+.redes-container img {
+  width: 35px;
+  height: 35px;
+  filter: contrast(40%);
+}
+.redes-container img:hover {
+  transition: 200ms;
+  padding: 3px;
+  filter: contrast(100%);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 2px;
+}
+.portfolioCard-container {
+  padding: 15px;
+  background-color: #b9c2d599;
+  border-radius: 5px;
+}
+.portfolioCard-container h2 {
+  margin: 10px 0px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.portfolioCard-container li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolioCard-container p {
+  font-size: 25px;
+  font-weight: 400;
+}
+.portfolioCard-container a {
+  margin: 0px 5px;
+}
+.portfolioCard-container img {
+  width: 25px;
+  height: 25px;
+  filter: contrast(50%);
+}
+.portfolioCard-container img:hover {
+  transition: 100ms;
+  padding: 2px;
+  filter: contrast(100%);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 2px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-weight: 400;
+}
