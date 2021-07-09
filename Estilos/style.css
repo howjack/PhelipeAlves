@@ -72,7 +72,7 @@ section h1 {
 }
 .redes-container img:hover {
   transition: 200ms;
-  padding: 3px;
+  padding: 2px;
   filter: contrast(100%);
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 2px;
@@ -107,8 +107,8 @@ section h1 {
   filter: contrast(50%);
 }
 .portfolioCard-container img:hover {
-  transition: 100ms;
-  padding: 2px;
+  transition: 80ms;
+  padding: 1px;
   filter: contrast(100%);
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 2px;
