@@ -151,7 +151,7 @@ footer {
 }
 .footerCardOffMov{
   animation: footeroffMov 2s ease;
-  bottom: -30%;
+  bottom: -40%;
 }
 .footerCard-container{
   background-color: white;
@@ -235,10 +235,10 @@ footer {
 }
 @keyframes footeroffMov {
   from {bottom: 0;}
-  to {bottom: -30%;}
+  to {bottom: -40%;}
 }
 @keyframes footeronMov {
-  from {bottom: -30%;}
+  from {bottom: -40%;}
   to {bottom: 0;}
 }
 @keyframes infoBtnMov {

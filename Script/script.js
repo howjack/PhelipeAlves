@@ -22,8 +22,9 @@ info.addEventListener("click", function () {
     } else {
       footer.classList.remove("footerCardOnMov");
       footer.classList.add("footerCardOffMov");
+      info.classList.remove("infobtnOn");
       setTimeout(function () {
-        info.classList.remove("infobtnOn");
+        info.classList.add("infobtnOn");
         pixCard.classList.remove("pixOn");
         descriptCard.classList.add("footerDescriptOn");
         footer.classList.remove("footerCardOffMov");
@@ -59,8 +60,9 @@ pixBtn.addEventListener("click", function () {
     } else {
       footer.classList.remove("footerCardOnMov");
       footer.classList.add("footerCardOffMov");
+      info.classList.remove("infobtnOn");
       setTimeout(function () {
-        info.classList.remove("infobtnOn");
+        info.classList.add("infobtnOn");
         descriptCard.classList.remove("footerDescriptOn");
         pixCard.classList.add("pixOn");
         footer.classList.remove("footerCardOffMov");
