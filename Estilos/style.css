@@ -7,13 +7,9 @@ ul {
   padding-inline-start: 30px;
 }
 body {
-  background: linear-gradient(
-    90deg,
-    #c8293f 0%,
-    #f14539 50%,
-    #ff6e42 100%
-  );
+  background: linear-gradient(90deg, #c8293f 0%, #f14539 50%, #ff6e42 100%);
   font-family: "Ubuntu", sans-serif;
+  margin: 0px 5px;
 }
 section {
   -webkit-box-shadow: 5px 5px 50px 8px rgba(0, 0, 0, 0.59);
@@ -21,9 +17,10 @@ section {
   background-color: white;
   display: block;
   margin-top: 150px;
+  margin-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
+  max-width: 550px;
   padding: 15px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -34,6 +31,7 @@ header {
   background-position-y: -85px;
   height: 100px;
   border-radius: 5px;
+  transition: 1s ease;
 }
 header img {
   width: 170px;
@@ -74,29 +72,53 @@ section h1 {
   transition: 200ms;
   padding: 2px;
   filter: contrast(100%);
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 2px;
 }
-.portfolioCard-container {
+.contentCard-container {
   padding: 15px;
+  margin: 10px 0px;
   background-color: #b9c2d599;
   border-radius: 5px;
 }
-.portfolioCard-container h2 {
-  margin: 10px 0px;
+.contentCard-container h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
   font-size: 28px;
   font-weight: 600;
 }
-.portfolioCard-container li {
+.contentCard-container p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.aboutContent-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.aboutContent-container p {
+  font-size: 21px;
+  padding: 3px 0px;
+}
+.liContent-container {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
-.portfolioCard-container p {
-  font-size: 25px;
+.subContent-container {
+  display: flex;
+  margin-left: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.subContent-container p {
+  font-size: 20px;
   font-weight: 400;
+  padding: 5px 0px;
 }
 .portfolioCard-container a {
   margin: 0px 5px;
@@ -110,14 +132,170 @@ section h1 {
   transition: 80ms;
   padding: 1px;
   filter: contrast(100%);
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 2px;
 }
 footer {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: -20%;
+  left: 50%;
   width: 100%;
+  transform: translateX(-50%);
   height: auto;
   text-align: center;
   font-weight: 400;
+}
+.footerCardOnMov{
+  animation: footeronMov 2s ease;
+  bottom: 0%;
+}
+.footerCardOffMov{
+  animation: footeroffMov 2s ease;
+  bottom: -30%;
+}
+.footerCard-container{
+  background-color: white;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: auto;
+}
+.footerDescript-container {
+  background-color: #b9c2d599;
+  border-radius: 5px;
+  padding: 10px 5px;
+  display: none;
+}
+.footerDescriptOn{
+  display: block;
+}
+.footerDescript-container p{
+  padding-bottom: 10px;
+}
+.pixCard{
+  background-color: #b9c2d599;
+  border-radius: 5px;
+  padding: 10px 5px;
+  display: none;
+}
+.pixOn{
+  display: block;
+}
+.pixCard h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0px;
+  padding: 0px 5px;
+  text-align: center;
+}
+.pixCard p{
+  font-size: 21px;
+  font-weight: 400;
+  margin: 15px 0px;
+  padding: 0px 5px;
+}
+.pixCard button{
+  padding: 20px 80px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffffe7;
+  font-size: 25px;
+}
+.infobtn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 8%;
+  z-index: 2;
+  right: 2%;
+  border-radius: 50%;
+  background-color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsla(0, 0%, 71%, 0.5);
+  animation: infoBtnMov 1.5s ease-in-out;
+}
+.infobtn:hover {
+  transition: 0.1s;
+  border: 4px solid #f14539;
+}
+.infobtn:active {
+  transition: 0.1s;
+  background-color: #f14539;
+}
+.infobtnOn{
+  background-color: #f14539;
+}
+.infobtn img {
+  width: 30px;
+}
+@keyframes footeroffMov {
+  from {bottom: 0;}
+  to {bottom: -30%;}
+}
+@keyframes footeronMov {
+  from {bottom: -30%;}
+  to {bottom: 0;}
+}
+@keyframes infoBtnMov {
+  from {bottom: 20%;}
+  to {bottom: 8%}
+}
+@media screen {
+  @media only screen and (max-width: 425px) {
+    section {
+      margin-top: 100px;
+    }
+    header {
+      background-position-y: -60px;
+      transition: 1s ease;
+    }
+    section h1 {
+      font-size: 27px;
+    }
+    .contentCard-container h2 {
+      font-size: 25px;
+    }
+    .redes-container a {
+      margin: 0px 10px;
+    }
+    .liContent-container {
+      margin: 5px 0px;
+    }
+    .portfolioCard-container a {
+      margin: 0px 8px;
+    }
+  }
+}
+@media screen {
+  @media only screen and (max-width: 375px) {
+    header {
+      background-position-y: -40px;
+      transition: 1s ease;
+    }
+  }
+}
+@media screen {
+  @media only screen and (max-width: 320px) {
+    header {
+      background-position-y: -20px;
+      transition: 1s ease;
+    }
+    section h1 {
+      font-size: 25px;
+    }
+    .redes-container a {
+      margin: 4px 20px;
+    }
+    .contentCard-container p {
+      font-size: 20px;
+    }
+    .subContent-container p {
+      font-size: 15px;
+    }
+  }
 }

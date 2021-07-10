@@ -28,22 +28,57 @@
                     src="/Imagens/linkedin.png" alt="LinkedIn"></a>
             <a href="https://steamcommunity.com/id/HowJack" target="_blank"><img src="/Imagens/steam.png"
                     alt="Steam"></a>
-            <a href="#" target="_blank"><img src="/Imagens/coffee.png" alt="Pix do Café"></a>
+            <a id="pixBtn" target="_blank"><img src="/Imagens/coffee.png" alt="Pix do Café"></a>
         </div>
-        <div class="portfolioCard-container">
+        <div class="contentCard-container">
+            <h2>Sobre mim</h2>
+            <li class="aboutContent-container">
+                <p>Olá, meu nome é Phelipe, tenho 23 anos, e moro em Camboriú-SC, atualmente estudo programação no
+                    Senai e também por conta própria.</p>
+                <p> Comecei a aprender programação no começo de 2018 na faculdade,
+                    onde me apeguei a programação e desde então venho me dedicando no estudo e me aperfeiçoando na área.
+                </p>
+            </li>
+        </div>
+        <div class="contentCard-container">
+            <h2>Conhecimentos</h2>
+            <li class="liContent-container">
+                <p>Linguagens:</p>
+            <li class="subContent-container">
+                <p>C</p>
+                <p>C#</p>
+                <p>CSS</p>
+                <p>HTML</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+            </li>
+            </li>
+            <li class="liContent-container">
+                <p>Informatica:</p>
+            <li class="subContent-container">
+                <p>Windows e Linux</p>
+                <p>Manutenção de Micros em Geral,
+                    Redes Físicas e Redes sem fio (Wireless),
+                    Cabeamento e instalação</p>
+                <p>Suporte e Atendimento a clientes</p>
+                <p>Configuração e instalação de Softwares, Hardwares em Geral</p>
+            </li>
+            </li>
+        </div>
+        <div class="contentCard-container">
             <h2>Portfólios</h2>
-            <li>
+            <li class="liContent-container">
                 <p>Codelândia</p>
-                <div>
+                <div class="portfolioCard-container">
                     <a href="https://github.com/howjack/Desafio-Codelandia" target="_blank"><img src="/Imagens/code.png"
                             alt="Codigo-Fonte"></a>
                     <a href="https://codelandia-desafio1.vercel.app/" target="_blank"><img src="/Imagens/website.png"
                             alt="Site"></a>
                 </div>
             </li>
-            <li>
+            <li class="liContent-container">
                 <p>Jordan Shoes</p>
-                <div>
+                <div class="portfolioCard-container">
                     <a href="https://github.com/howjack/Desafio-Codelandia" target="_blank"><img src="/Imagens/code.png"
                             alt="Codigo-Fonte"></a>
                     <a href="https://codelandia-desafio2.vercel.app/" target="_blank"><img src="/Imagens/website.png"
@@ -52,16 +87,31 @@
             </li>
         </div>
     </section>
-    <footer>
-        <p>Feito por mim</p>
-        <div>Icons made by
-            <a href="https://www.freepik.com" title="Freepik">Freepik</a>
-            and
-            <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-            from
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    <footer id="footer">
+        <div class="footerCard-container">
+            <div class="footerDescript-container" id="descriptCard">
+                <p>Feito por Phelipe Alves</p>
+                <div>Icons made by
+                    <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                    and
+                    <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+                    from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            </div>
+            <div class="pixCard" id="pixCard">
+                <h1>Pix para o Café😀</h1>
+                <p>Segue a chave do pix</p>
+                <p id="pix">9ff5f9ab-1a75-4cd7-b743-c7f43c67c03c</p> 
+                <button class="btn" data-clipboard-target="#pix">Copiar aqui</button>
+            </div>
         </div>
     </footer>
+    <div class="infobtn" id="info">
+        <img src="/Imagens/exclamacao.png" alt="">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+    <script src="/Script/script.js"></script>
 </body>
 
 </html>
