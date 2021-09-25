@@ -6,7 +6,7 @@ const aBtn = document.querySelectorAll(".sidebar-container a")
 const burguer = document.getElementById("burguer");
 const menu = document.querySelector("menu");
 const buttonCV = document.querySelector("#curriculum")
-const buttonTel = document.querySelector("#tel")
+const buttonMail = document.querySelector("#mail")
 const flutterBtn = document.querySelector(".flutter");
 const skillsConteiner = document.querySelectorAll(".skills");
 const skills = document.querySelectorAll(".skills-container li");
@@ -18,8 +18,8 @@ burguer.addEventListener("click", burguerAnimation);
 buttonCV.addEventListener("click", (e) => {
     window.open(linkDownload, '_blank');
 })
-buttonTel.addEventListener("click", () => {
-    window.location.href = "tel:(47)991407271";
+buttonMail.addEventListener("click", () => {
+    window.location.href = "mailto:phelipe44@live.com";
 })
 flutterBtn.addEventListener("click", () => {
     window.location.href = "#home";

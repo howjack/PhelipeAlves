@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="../Desafio09/Scripts/script.js"></script>
-    <link rel="stylesheet" href="../Desafio09/Estilo/style.css">
+    <script defer src="./Scripts/script.js"></script>
+    <link rel="stylesheet" href="./Estilo/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -34,29 +34,30 @@
             <p>Desenvolvedor Front-End</p>
             <div class="btn-container">
                 <button id="curriculum">Download CV</button>
-                <button id="tel">Entrar em contato</button>
+                <button id="mail">Entrar em contato</button>
             </div>
         </div>
-        <img src="../Desafio09/Images/header.svg" alt="image">
+        <img src="./Images/SVG/Header/header.svg" alt="image">
     </header>
     <main>
         <section id="about" class="about padding">
             <h3>Sobre mim</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+            <p>Olá, meu nome é Phelipe, tenho 23 anos, e moro em Camboriú-SC, atualmente estudo programação no Senai e
+                também por conta própria.
+
+                Comecei a aprender programação no começo de 2018, onde me apeguei a programação e desde
+                então venho me dedicando nos estudos no qual vejo vejo otimos resultados.</p>
             <div class="information-container">
                 <li>
                     <div class="emoji-container">
-                        <img src="../Desafio09/Images/smile.svg" alt="smile">
+                        <img src="./Images/SVG/About/smile.svg" alt="smile">
                     </div>
                     <h4>Meu Nome</h4>
                     <p>Phelipe Alves Fagundes</p>
                 </li>
                 <li>
                     <div class="emoji-container">
-                        <img src="../Desafio09/Images/email.svg" alt="email">
+                        <img src="./Images/SVG/About/email.svg" alt="email">
                     </div>
                     <h4>E-mail</h4>
                     <p>phelipe44@live.com</p>
@@ -64,14 +65,14 @@
                 </li>
                 <li>
                     <div class="emoji-container">
-                        <img src="../Desafio09/Images/instagram.svg" alt="instagram">
+                        <img src="./Images/SVG/About/instagram.svg" alt="instagram">
                     </div>
                     <h4>Instagram</h4>
                     <p>@phelipe.fagundes</p>
                 </li>
                 <li>
                     <div class="emoji-container">
-                        <img src="../Desafio09/Images/phone.svg" alt="phone">
+                        <img src="./Images/SVG/About/phone.svg" alt="phone">
                     </div>
                     <h4>Telefone</h4>
                     <p>(47) 99140-7271</p>
@@ -82,45 +83,46 @@
             <h3>Projetos</h3>
             <div class="projects-container">
                 <li>
-                    <div>
-                        <img src="" alt=" ">
-                        <h4>Título do projeto</h4>
+                    <div onclick="window.open('https://react-sga.vercel.app/', '_blank')">
+                        <img src="./Images/Projects/react-sga.png" alt="React-SGA">
+                        <h4>Sistema de gerenciamento de alunos</h4>
+                        <p>Tecnologias: React, Material UI e MirageJS</p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://github.com/howjack/DIH-Projeto02-ZapSystem', '_blank')">
+                        <img src="./Images/Projects/zap-system.png" alt="Zap-System">
+                        <h4>Zap System - ContaZap</h4>
+                        <p>Tecnologias: React, Material UI, Axios e Redux</p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://desafios-codelandia.vercel.app/', '_blank')">
+                        <img src="./Images/Projects/desafios-codelandia.png" alt="Desafio-Codelândia">
+                        <h4>Desafio Codelândia</h4>
                         <p>Tecnologias: HTML, CSS e JS.</p>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img src="" alt=" ">
-                        <h4>Título do projeto</h4>
-                        <p>Tecnologias: HTML, CSS e JS.</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="" alt=" ">
-                        <h4>Título do projeto</h4>
-                        <p>Tecnologias: HTML, CSS e JS.</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="" alt=" ">
-                        <h4>Título do projeto</h4>
+                    <div onclick="window.open('https://to-do-snowy.vercel.app/', '_blank')">
+                        <img src="./Images/Projects/to-do.png" alt="ToDo-Page">
+                        <h4>ToDo Page</h4>
                         <p>Tecnologias: HTML, CSS e JS.</p>
                     </div>
                 </li>
             </div>
+            <a href="https://github.com/howjack?tab=repositories" target="_blank">Repositorio do GitHub</a>
         </section>
         <section id="services" class="services padding">
             <h3>Serviços</h3>
             <div class="services-container">
                 <li>
-                    <img src="../Desafio09/Images/code.svg" alt="code icon">
+                    <img src="./Images/SVG/Services/code.svg" alt="code icon">
                     <p>Criação de sites</p>
                     <div id="low-bar">
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/reponsivel.svg" alt="code icon">
+                    <img src="./Images/SVG/Services/reponsivel.svg" alt="code icon">
                     <p>Sites responsivos</p>
                     <div id="low-bar">
                 </li>
@@ -130,43 +132,43 @@
             <h3>Minhas skills</h3>
             <div class="skills-container">
                 <li>
-                    <img src="../Desafio09/Images/html5.svg" alt="html">
+                    <img src="./Images/SVG/Skills/html5.svg" alt="html">
                     <p>HTML5</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/css3.svg" alt="css">
+                    <img src="./Images/SVG/Skills/css3.svg" alt="css">
                     <p>CSS</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/javascript.svg" alt="javaScript">
+                    <img src="./Images/SVG/Skills/javascript.svg" alt="javaScript">
                     <p>JavaScript</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/git.svg" alt="git">
+                    <img src="./Images/SVG/Skills/git.svg" alt="git">
                     <p>Git</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/react.svg" alt="react">
+                    <img src="./Images/SVG/Skills/react.svg" alt="react">
                     <p>React</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/redux.svg" alt="redux">
+                    <img src="./Images/SVG/Skills/redux.svg" alt="redux">
                     <p>Redux</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/material-ui.svg" alt="material ui">
+                    <img src="./Images/SVG/Skills/material-ui.svg" alt="material ui">
                     <p>Material UI</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/java.svg" alt="java">
+                    <img src="./Images/SVG/Skills/java.svg" alt="java">
                     <p>Java</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/c.svg" alt="c">
+                    <img src="./Images/SVG/Skills/c.svg" alt="c">
                     <p>C</p>
                 </li>
                 <li>
-                    <img src="../Desafio09/Images/cSharp.svg" alt="c#">
+                    <img src="./Images/SVG/Skills/cSharp.svg" alt="c#">
                     <p>C#</p>
                 </li>
             </div>
