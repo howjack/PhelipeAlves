@@ -1,117 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./Scripts/script.js"></script>
+    <link rel="stylesheet" href="./Estilo/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Estilos/style.css">
-    <title>Phelipe Alves Fagundes</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Portfólio</title>
 </head>
 
 <body>
-    <section>
-        <header>
-            <img src="https://unavatar.now.sh/github/howjack" />
-        </header>
-        <h1>Phelipe Alves Fagundes</h1>
-        <div class="redes-container">
-            <a href="https://www.instagram.com/phelipe.fagundes/" target="_blank"><img src="/Imagens/instagram.png"
-                    alt="Instagram"></a>
-            <a href="https://github.com/howjack" target="_blank"><img src="/Imagens/github.png" alt="GitHub"></a>
-            <a href="https://www.facebook.com/phelipe.alves.986" target="_blank"><img src="/Imagens/facebook.png"
-                    alt="Facebook"></a>
-            <a href="https://www.linkedin.com/in/phelipe-alves-fagundes-170817134/" target="_blank"><img
-                    src="/Imagens/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://steamcommunity.com/id/HowJack" target="_blank"><img src="/Imagens/steam.png"
-                    alt="Steam"></a>
-            <a id="pixBtn" target="_blank"><img src="/Imagens/coffee.png" alt="Pix do Café"></a>
+    <nav id="home">
+        <h2>Portfólio</h2>
+        <div class="menu-container">
+            <a href="#about">Sobre mim</a>
+            <a href="#projects">Projetos</a>
+            <a href="#services">Serviços</a>
+            <a href="#skills">Minhas skills</a>
         </div>
-        <div class="contentCard-container">
-            <h2>Sobre mim</h2>
-            <li class="aboutContent-container">
-                <p>Olá, meu nome é Phelipe, tenho 23 anos, e moro em Camboriú-SC, atualmente estudo programação no
-                    Senai e também por conta própria.</p>
-                <p> Comecei a aprender programação no começo de 2018 na faculdade,
-                    onde me apeguei a programação e desde então venho me dedicando nos estudos.
-                </p>
-            </li>
+        <div id="burguer" class="burguer-container">
+            <div id="burguer1" class="burger"></div>
+            <div id="burguer2" class="burger"></div>
+            <div id="burguer3" class="burger"></div>
         </div>
-        <div class="contentCard-container">
-            <h2>Conhecimentos</h2>
-            <li class="liContent-container">
-                <p>Linguagens:</p>
-            <li class="subContent-container">
-                <p>C</p>
-                <p>C#</p>
-                <p>CSS</p>
-                <p>HTML</p>
-                <p>Java</p>
-                <p>JavaScript</p>
-            </li>
-            </li>
-            <li class="liContent-container">
-                <p>Informatica:</p>
-            <li class="subContent-container">
-                <p>Windows e Linux</p>
-                <p>Manutenção de Micros em Geral,
-                    Redes Físicas e Redes sem fio (Wireless),
-                    Cabeamento e instalação</p>
-                <p>Suporte e Atendimento a clientes</p>
-                <p>Configuração e instalação de Softwares, Hardwares em Geral</p>
-            </li>
-            </li>
-        </div>
-        <div class="contentCard-container">
-            <h2>Portfólios</h2>
-            <li class="liContent-container">
-                <p>Codelândia</p>
-                <div class="portfolioCard-container">
-                    <a href="https://github.com/howjack/Desafio-Codelandia" target="_blank"><img src="/Imagens/code.png"
-                            alt="Codigo-Fonte"></a>
-                    <a href="https://codelandia-desafio1.vercel.app/" target="_blank"><img src="/Imagens/website.png"
-                            alt="Site"></a>
-                </div>
-            </li>
-            <li class="liContent-container">
-                <p>Jordan Shoes</p>
-                <div class="portfolioCard-container">
-                    <a href="https://github.com/howjack/Desafio-Codelandia" target="_blank"><img src="/Imagens/code.png"
-                            alt="Codigo-Fonte"></a>
-                    <a href="https://codelandia-desafio2.vercel.app/" target="_blank"><img src="/Imagens/website.png"
-                            alt="Site"></a>
-                </div>
-            </li>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="footerCard-container">
-            <div class="footerDescript-container" id="descriptCard">
-                <p>Feito por Phelipe Alves</p>
-                <div>Icons made by
-                    <a href="https://www.freepik.com" title="Freepik">Freepik</a>
-                    and
-                    <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-                    from
-                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                </div>
-            </div>
-            <div class="pixCard" id="pixCard">
-                <h1>Pix para o Café😀</h1>
-                <p>Segue a chave do pix</p>
-                <p id="pix">9ff5f9ab-1a75-4cd7-b743-c7f43c67c03c</p> 
-                <button class="btn" data-clipboard-target="#pix">Copiar aqui</button>
+    </nav>
+    <header>
+        <div class="title-container">
+            <h1>Olá, eu sou o Phelipe Alves :)</h1>
+            <p>Desenvolvedor Front-End</p>
+            <div class="btn-container">
+                <button id="curriculum">Download CV</button>
+                <button id="mail">Entrar em contato</button>
             </div>
         </div>
+        <img src="./Images/SVG/Header/header.svg" alt="image">
+    </header>
+    <main>
+        <section id="about" class="about padding">
+            <h3>Sobre mim</h3>
+            <p>Olá, meu nome é Phelipe, tenho 23 anos, e moro em Camboriú-SC, atualmente estudo programação no Senai e
+                também por conta própria.
+
+                Comecei a aprender programação no começo de 2018, onde me apeguei a programação e desde
+                então venho me dedicando nos estudos no qual vejo vejo otimos resultados.</p>
+            <div class="information-container">
+                <li>
+                    <div class="emoji-container">
+                        <img src="./Images/SVG/About/smile.svg" alt="smile">
+                    </div>
+                    <h4>Meu Nome</h4>
+                    <p>Phelipe Alves Fagundes</p>
+                </li>
+                <li>
+                    <div class="emoji-container">
+                        <img src="./Images/SVG/About/email.svg" alt="email">
+                    </div>
+                    <h4>E-mail</h4>
+                    <p>phelipe44@live.com</p>
+                    <p>phelipe44@gmail.com</p>
+                </li>
+                <li>
+                    <div class="emoji-container">
+                        <img src="./Images/SVG/About/instagram.svg" alt="instagram">
+                    </div>
+                    <h4>Instagram</h4>
+                    <p>@phelipe.fagundes</p>
+                </li>
+                <li>
+                    <div class="emoji-container">
+                        <img src="./Images/SVG/About/phone.svg" alt="phone">
+                    </div>
+                    <h4>Telefone</h4>
+                    <p>(47) 99140-7271</p>
+                </li>
+            </div>
+        </section>
+        <section id="projects" class="projects padding">
+            <h3>Projetos</h3>
+            <div class="projects-container">
+                <li>
+                    <div onclick="window.open('https://react-sga.vercel.app/', '_blank')">
+                        <img src="./Images/Projects/react-sga.png" alt="React-SGA">
+                        <h4>Sistema de gerenciamento de alunos</h4>
+                        <p>Tecnologias: React, Material UI e MirageJS</p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://github.com/howjack/DIH-Projeto02-ZapSystem', '_blank')">
+                        <img src="./Images/Projects/zap-system.png" alt="Zap-System">
+                        <h4>Zap System - ContaZap</h4>
+                        <p>Tecnologias: React, Material UI, Axios e Redux</p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://desafios-codelandia.vercel.app/', '_blank')">
+                        <img src="./Images/Projects/desafios-codelandia.png" alt="Desafio-Codelândia">
+                        <h4>Desafio Codelândia</h4>
+                        <p>Tecnologias: HTML, CSS e JS.</p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://to-do-snowy.vercel.app/', '_blank')">
+                        <img src="./Images/Projects/to-do.png" alt="ToDo-Page">
+                        <h4>ToDo Page</h4>
+                        <p>Tecnologias: HTML, CSS e JS.</p>
+                    </div>
+                </li>
+            </div>
+            <a href="https://github.com/howjack?tab=repositories" target="_blank">Repositorio do GitHub</a>
+        </section>
+        <section id="services" class="services padding">
+            <h3>Serviços</h3>
+            <div class="services-container">
+                <li>
+                    <img src="./Images/SVG/Services/code.svg" alt="code icon">
+                    <p>Criação de sites</p>
+                    <div id="low-bar">
+                </li>
+                <li>
+                    <img src="./Images/SVG/Services/reponsivel.svg" alt="code icon">
+                    <p>Sites responsivos</p>
+                    <div id="low-bar">
+                </li>
+            </div>
+        </section>
+        <section id="skills" class="skills padding">
+            <h3>Minhas skills</h3>
+            <div class="skills-container">
+                <li>
+                    <img src="./Images/SVG/Skills/html5.svg" alt="html">
+                    <p>HTML5</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/css3.svg" alt="css">
+                    <p>CSS</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/javascript.svg" alt="javaScript">
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/git.svg" alt="git">
+                    <p>Git</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/react.svg" alt="react">
+                    <p>React</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/redux.svg" alt="redux">
+                    <p>Redux</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/material-ui.svg" alt="material ui">
+                    <p>Material UI</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/java.svg" alt="java">
+                    <p>Java</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/c.svg" alt="c">
+                    <p>C</p>
+                </li>
+                <li>
+                    <img src="./Images/SVG/Skills/cSharp.svg" alt="c#">
+                    <p>C#</p>
+                </li>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>
+            Orgulhosamente feito por <a href="https://github.com/howjack">Phelipe Alves</a>
+        </h5>
     </footer>
-    <div class="infobtn" id="info">
-        <img src="/Imagens/exclamacao.png" alt="">
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
-    <script src="/Script/script.js"></script>
+    <menu>
+        <div class="sidebar-container">
+            <a href="#about">Sobre mim</a>
+            <a href="#projects">Projetos</a>
+            <a href="#services">Serviços</a>
+            <a href="#skills">Minhas skills</a>
+        </div>
+    </menu>
+    <button class="flutter">
+        <div class="arrow-container">
+            <div class="arrow arrow01"></div>
+            <div class="arrow arrow02"></div>
+        </div>
+    </button>
 </body>
 
 </html>
