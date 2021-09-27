@@ -8,14 +8,13 @@ const menu = document.querySelector("menu");
 const buttonCV = document.querySelector("#curriculum")
 const buttonMail = document.querySelector("#mail")
 const flutterBtn = document.querySelector(".flutter");
-const skillsConteiner = document.querySelectorAll(".skills");
 const skills = document.querySelectorAll(".skills-container li");
 
 var showMenu = false;
 const linkDownload = "https://drive.google.com/file/d/1paeHLedqEBw9WsEsh_no1ycK4C4XjDRY/view"
 
 burguer.addEventListener("click", burguerAnimation);
-buttonCV.addEventListener("click", (e) => {
+buttonCV.addEventListener("click", () => {
     window.open(linkDownload, '_blank');
 })
 buttonMail.addEventListener("click", () => {
@@ -25,17 +24,17 @@ flutterBtn.addEventListener("click", () => {
     window.location.href = "#home";
 })
 skills.forEach(skill => {
-    skill.addEventListener("mouseover", event => {
+    skill.addEventListener("mouseover", () => {
         skill.querySelector("p").style.display = "block";
     })
-    skill.addEventListener("mouseout", event => {
+    skill.addEventListener("mouseout", () => {
         skill.querySelector("p").style.display = "none";
     })
 
 })
 
 aBtn.forEach(btn => {
-    btn.addEventListener('click', event => {
+    btn.addEventListener('click', () => {
         burguer1.classList.remove("burguer1");
         burguer2.classList.remove("burguer2");
         burguer3.classList.remove("burguer3");
@@ -46,7 +45,7 @@ aBtn.forEach(btn => {
 })
 
 function burguerAnimation() {
-    if (showMenu == false) {
+    if (showMenu === false) {
         burguer1.classList.add("burguer1");
         burguer2.classList.add("burguer2");
         burguer3.classList.add("burguer3");
