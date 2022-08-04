@@ -11,7 +11,7 @@ const flutterBtn = document.querySelector(".flutter");
 const skills = document.querySelectorAll(".skills-container li");
 
 var showMenu = false;
-const linkDownload = "https://drive.google.com/file/d/1paeHLedqEBw9WsEsh_no1ycK4C4XjDRY/view"
+const linkDownload = "https://drive.google.com/file/d/1_GZuwUaE0FfQCjB4Xzj8_KmYe8CFI92W/view"
 
 burguer.addEventListener("click", burguerAnimation);
 buttonCV.addEventListener("click", () => {
